@@ -1,0 +1,16 @@
+diff --git a/imx-yocto-bsp-4-9-88-imx6/sources/meta-seco-bsp-release-bsp7-rel/conf/machine/seco-imx6-962.conf b/imx-yocto-bsp-4-9-88-imx6/sources/meta-seco-bsp-release-bsp7-rel/seco-imx6-962.conf
+index a9ea00d..b16f432 100644
+--- a/imx-yocto-bsp-4-9-88-imx6/sources/meta-seco-bsp-release-bsp7-rel/conf/machine/seco-imx6-962.conf
++++ b/imx-yocto-bsp-4-9-88-imx6/sources/meta-seco-bsp-release-bsp7-rel/seco-imx6-962.conf
+@@ -21,9 +21,9 @@ UBOOT_MACHINE = "mx6qdl_seco_uQ7_962_2G_1G_2x256M_defconfig "
+ PREFERRED_PROVIDER_virtual/kernel ?= "linux-seco"
+ PREFERRED_PROVIDER_virtual/kernel_mx6 = "linux-seco"
+ 
+-KERNEL_DEVICETREE ?= "imx6q-seco_uq7_962.dtb imx6dl-seco_uq7_962.dtb"
++KERNEL_DEVICETREE ?= "imx6q-seco_uq7_962.dtb imx6qp-seco_uq7_962.dtb imx6dl-seco_uq7_962.dtb"
+ 
+-KERNEL_IMAGETYPE = "zImage"
++KERNEL_IMAGETYPE = "zImage" 
+ 
+ SERIAL_CONSOLE = "115200 ttymxc1"
+ 
